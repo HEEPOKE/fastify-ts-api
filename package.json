@@ -1,0 +1,8 @@
+{
+  "name": "fastify-ts-api",
+  "version": "1.0.0",
+  "main": "main.ts",
+  "repository": "https://github.com/HEEPOKE/fastify-ts-api.git",
+  "author": "HEEPOKE <77528292+HEEPOKE@users.noreply.github.com>",
+  "license": "MIT"
+}
