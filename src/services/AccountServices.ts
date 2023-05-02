@@ -1,6 +1,6 @@
 import prisma from '../prisma';
 
-async function listUser() {
+async function listAccount() {
     return await prisma.account.findMany({
         select: {
             id: true,
@@ -48,7 +48,7 @@ async function deleteAccount(id: number) {
 }
 
 const accountServices = {
-    listUser,
+    listAccount,
     getAccountById,
     createAccount,
     findEmail,
