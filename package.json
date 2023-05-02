@@ -1,12 +1,14 @@
 {
   "name": "fastify-ts-api",
   "version": "1.0.0",
-  "main": "main.ts",
+  "main": "dist/main.js",
   "repository": "https://github.com/HEEPOKE/fastify-ts-api.git",
   "author": "HEEPOKE <77528292+HEEPOKE@users.noreply.github.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev main.ts"
+    "start": "node dist/main.js",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/main.ts",
+    "build": "npx tsc"
   },
   "dependencies": {
     "@types/node": "^18.16.3",
