@@ -13,6 +13,7 @@ function server() {
     methods: ['GET', 'PUT', 'PATCH', 'POST', 'DELETE'],
   });
   app.register(helmet);
+  routes(app, '/api');
   app.register(swagger, {
     openapi: {
       info: {
@@ -31,7 +32,6 @@ function server() {
   app.register(swaggerUi, {
     prefix: '/documentation'
   });
-  routes(app);
 
   return app;
 }

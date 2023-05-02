@@ -3,7 +3,7 @@ import accountServices from '../services/AccountServices';
 
 async function listAccount(request: any, reply: any) {
     try {
-        const account = await accountServices.createAccount(request.body);
+        const account = await accountServices.listAccount();
 
         const payload = {
             data: account,
