@@ -1,14 +1,10 @@
 import { FastifyInstance } from 'fastify';
 
-async function app(fastify: FastifyInstance) {
+async function routes(fastify: FastifyInstance) {
 
     fastify.get('/', async (request, reply) => {
         reply.send({ hello: 'world' })
     });
-}
-
-const routes = {
-    app
 }
 
 export default routes;

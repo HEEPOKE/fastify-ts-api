@@ -31,7 +31,7 @@ function server() {
   app.register(swaggerUi, {
     prefix: '/documentation'
   });
-  routes.app(app);
+  routes(app);
 
   return app;
 }
