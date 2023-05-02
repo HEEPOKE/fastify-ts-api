@@ -2,7 +2,8 @@ import fastify from "fastify";
 import cors from '@fastify/cors'
 import helmet from "@fastify/helmet";
 import swagger from "@fastify/swagger";
-import swaggerUi from '@fastify/swagger-ui'
+import swaggerUi from '@fastify/swagger-ui';
+import routes from '../routes';
 
 function server() {
   const app = fastify({ logger: true });
@@ -30,6 +31,7 @@ function server() {
   app.register(swaggerUi, {
     prefix: '/documentation'
   });
+  routes.app(app);
 
   return app;
 }
