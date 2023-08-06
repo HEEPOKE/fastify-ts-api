@@ -1,7 +1,7 @@
 # Start
 
 ```bash
-cp .env.example
+cp .env.example .env
 ```
 
 ## yarn
